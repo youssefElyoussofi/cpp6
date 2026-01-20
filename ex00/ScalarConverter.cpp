@@ -4,6 +4,27 @@
 #include <cmath>
 #include <limits>
 
+ScalarConverter::ScalarConverter()
+{
+
+}
+
+ScalarConverter::ScalarConverter(const ScalarConverter& scalar)
+{
+    (void)scalar;
+}
+
+ScalarConverter& ScalarConverter::operator=(const ScalarConverter& scalar)
+{
+    (void)scalar;
+    return *this;
+}
+
+ScalarConverter::~ScalarConverter()
+{
+    
+}
+
 static bool is_char_literal(const std::string& input)
 {
     if (input.length() == 1 && !std::isdigit(input[0]))
