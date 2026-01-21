@@ -8,8 +8,10 @@ class Data;
 
 class Serializer
 {
-    public:
+    private:
         Serializer();
+
+    public:
         Serializer(const Serializer& serial);
         Serializer& operator=(const Serializer& serial);
         ~Serializer();
