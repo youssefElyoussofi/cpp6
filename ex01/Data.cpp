@@ -1,5 +1,10 @@
 #include "Data.hpp"
 
+Data::Data():num(0)
+{
+
+}
+
 Data::Data(int num):num(num)
 {
 }

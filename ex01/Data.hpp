@@ -6,6 +6,7 @@ class Data
     private:
         int num;
     public:
+        Data();
         Data(int num);
         Data(const Data& data);
         Data& operator=(const Data& data);
