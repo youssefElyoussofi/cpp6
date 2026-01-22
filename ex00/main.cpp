@@ -2,8 +2,8 @@
 
 int main()
 {
-    std::cout << "test 00 : a \n";    
-    ScalarConverter::convert("a");
+    std::cout << "test 00 : TAB \n";    
+    ScalarConverter::convert("	");
     std::cout << "\ntest 01 : 88 \n";    
     ScalarConverter::convert("88");
     std::cout << "\ntest 02 : 12.5 \n";    
@@ -16,5 +16,7 @@ int main()
     ScalarConverter::convert("5.0f");
     std::cout << "\ntest 06 : 76fdg \n";    
     ScalarConverter::convert("76fdg");
+    std::cout << "\ntest 07 : a \n";    
+    ScalarConverter::convert("a");
     return 0;
 }

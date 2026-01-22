@@ -64,7 +64,10 @@ void ScalarConverter::convert(const std::string& input)
 {
     if (is_char_literal(input))
     {
-        std::cout << "char : '" << static_cast<char>(input[0]) << "'\n";
+        if (static_cast<int>(input[0]) > 126 || static_cast<int>(input[0]) < 32)
+            std::cout << "char : Non displayable\n";
+        else
+            std::cout << "char : '" << input[0] << "'\n";
         std::cout << "int : " << static_cast<int>(input[0]) << std::endl;
         std::cout << "float : " << std::fixed << std::setprecision(1) << static_cast<float>(input[0]) << "f\n";
         std::cout << "double : " << std::fixed << std::setprecision(1) << static_cast<double>(input[0]) << std::endl;
